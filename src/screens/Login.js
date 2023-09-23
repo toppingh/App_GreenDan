@@ -158,7 +158,7 @@ const LoginScreen = () => {
                 style={styles.mainButton}
                 onPress={handleLogin}
             >
-                <Text style={styles.mainButtonText}>Login</Text>
+                <Text style={styles.mainButtonText}>로그인</Text>
             </TouchableOpacity>
             <FlatList
                 data={data}
@@ -199,12 +199,15 @@ const styles = StyleSheet.create({
         borderColor: '#2D5E40',
         borderWidth: 1,
         justifyContent: 'center',
-        alignItems: 'center',
+        // alignItems: 'center',
+        width: '80%',
+        height: '10%',
     },
     mainButtonText: {
-        fontSize: 30,
+        fontSize: 15,
         color: 'white',
         fontWeight: 'bold',
+        textAlign: 'center',
     },
     textButton: {
         fontSize: 20,
