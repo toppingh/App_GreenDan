@@ -35,7 +35,7 @@ const Pw_reset = ({ navigation, route }) => {
                 return;
             }
 
-            const djServer = await fetch(`${DjangoIP}/accounts/dj-rest-auth/password/change/`, {
+            const djServer = await fetch(`${DjangoIP}accounts/dj-rest-auth/password/change/`, {
                 method: 'POST',
                 headers: {
                     Authorization: `Bearer ${token}`,
