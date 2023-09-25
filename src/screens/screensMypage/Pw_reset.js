@@ -51,7 +51,7 @@ const Pw_reset = ({ navigation, route }) => {
                 Alert.alert('비밀번호 변경 완료', '비밀번호가 변경되었습니다.', [
                     {
                         text: '확인',
-                        onPress: () => navigation.goBack(),
+                        onPress: () => navigation.navigate('login'), // 비밀번호 재설정 후 로그인 화면으로 이동
                     },
                 ]);
             } else {
